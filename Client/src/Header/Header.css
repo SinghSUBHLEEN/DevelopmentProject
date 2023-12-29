@@ -1,0 +1,19 @@
+.bb{
+    background-color: #343541;
+}
+
+.Sidebar-list{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+.Sidebar-element{
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:30px;
+}
+
+.Sidebar{
+    background-color:  #000000;
+}
