@@ -7,6 +7,9 @@ import { useState } from "react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import Logo from "./components/Icons/Logo";
 import Home from "./components/Home/Home";
+import AboutUs from "./components/AboutUs/AboutUs";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Projects from "./components/Projects/Projects";
 
 function App() {
     const [navSize, setNavSize] = useState("small");
@@ -57,6 +60,9 @@ function App() {
                     <Routes>
                         <Route path="/home" Component={Home}></Route>
                         <Route path="/" Component={Home}></Route>
+                        <Route path="/aboutUs" Component={AboutUs}></Route>
+                        <Route path="/contactUs" Component={ContactUs}></Route>
+                        <Route path="/projects" Component={Projects}></Route>
                     </Routes>
                 </div>
             </Box>

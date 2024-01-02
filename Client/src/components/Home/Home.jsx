@@ -2,8 +2,13 @@ import "./Home.css";
 import Carousel from "react-bootstrap/Carousel";
 import { Box } from "@chakra-ui/react";
 import Images from "../../images/Images";
+import { useEffect } from "react";
 
 function Home() {
+    useEffect(() => {
+        console.log("mounted or updates");
+    }, []);
+
     return (
         <>
             <div
@@ -27,31 +32,19 @@ function Home() {
                     <Carousel.Item interval={1000}>
                         <img src={Images.banner2} />
                         <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>
-                                Nulla vitae elit libero, a pharetra augue mollis
-                                interdum.
-                            </p>
+                            <h3>Find the home of your dreams</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={500}>
                         <img src={Images.banner1} />
                         <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.
-                            </p>
+                            <h3>Find the home of your dreams</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img src={Images.banner3} />
                         <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>
-                                Praesent commodo cursus magna, vel scelerisque
-                                nisl consectetur.
-                            </p>
+                            <h3>Find the home of your dreams</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
