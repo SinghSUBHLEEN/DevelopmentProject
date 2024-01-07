@@ -28,11 +28,12 @@ export default function Header({ navSize, setNavSize }) {
     return (
         <>
             <Box
-                pos="sticky"
-                left="0.5"
-                h="107.47%"
-                boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
-                w={navSize === "small" ? "55px" : "130px"}
+                // left="-10px"
+                ml={navSize === "small" ? "-10px" : "0px"}
+                // h="107.47%"
+                minHeight="107.47%"
+                boxShadow="0 0 12px 0 rgba(0, 0, 0, 0.05)"
+                w={navSize === "small" ? "60px" : "150px"}
                 flexDir="column"
                 justifyContent="space-between"
             >
@@ -44,17 +45,36 @@ export default function Header({ navSize, setNavSize }) {
                 >
                     <Tooltip
                         label={navSize === "small" ? "Home" : ""}
+                        // label="Home"
                         placement="right"
+                        ml="3px"
+                        py="4px"
+                        px="3"
                         hasArrow
-                        ml="5px"
-                        bg="blue.600"
+                        backgroundImage="linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%)"
                     >
                         <Box
                             display="flex"
-                            m="1"
+                            ml="2"
                             mt="6"
                             name="home"
+                            borderRadius="2xl"
+                            p="2"
                             onClick={handleClickHome}
+                            bg={
+                                (location.pathname === "/" ||
+                                    location.pathname === "/home") &&
+                                navSize === "large"
+                                    ? "blue.100"
+                                    : "none"
+                            }
+                            // _hover={{
+                            //     background:
+                            //         location.pathname === "/" ||
+                            //         location.pathname === "/home"
+                            //             ? "blue.200"
+                            //             : "none",
+                            // }}
                         >
                             <IconButton
                                 bg={
@@ -63,11 +83,14 @@ export default function Header({ navSize, setNavSize }) {
                                         ? "blue.100"
                                         : "none"
                                 }
+                                pr="0"
+                                mr="1"
+                                borderRadius="xl"
                                 _hover={{
                                     background:
                                         location.pathname === "/" ||
                                         location.pathname === "/home"
-                                            ? "blue.200"
+                                            ? "blue.100"
                                             : "none",
                                 }}
                                 icon={<HiHome fontSize="1.5rem" />}
@@ -83,16 +106,35 @@ export default function Header({ navSize, setNavSize }) {
                     </Tooltip>
                     <Tooltip
                         label={navSize === "small" ? "Projects" : ""}
+                        // label="Projects"
                         placement="right"
                         hasArrow
                         ml="5px"
-                        bg="blue.600"
+                        py="4px"
+                        px="3"
+                        backgroundImage="linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%)"
                     >
                         <Box
                             display="flex"
                             m="1"
+                            ml="2"
+                            borderRadius="2xl"
+                            p="2"
                             name="projects"
                             onClick={handleClickProjects}
+                            bg={
+                                location.pathname === "/projects" &&
+                                navSize === "large"
+                                    ? "blue.100"
+                                    : "none"
+                            }
+                            _hover={{
+                                background:
+                                    location.pathname === "/projects" &&
+                                    navSize === "large"
+                                        ? "blue.100"
+                                        : "none",
+                            }}
                         >
                             <IconButton
                                 bg={
@@ -100,10 +142,12 @@ export default function Header({ navSize, setNavSize }) {
                                         ? "blue.100"
                                         : "none"
                                 }
+                                mr="1"
+                                borderRadius="xl"
                                 _hover={{
                                     background:
                                         location.pathname === "/projects"
-                                            ? "blue.200"
+                                            ? "blue.100"
                                             : "none",
                                 }}
                                 icon={<BiSolidBuildings fontSize="1.5rem" />}
@@ -122,13 +166,24 @@ export default function Header({ navSize, setNavSize }) {
                         placement="right"
                         hasArrow
                         ml="5px"
-                        bg="blue.600"
+                        py="4px"
+                        px="3"
+                        backgroundImage="linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%)"
                     >
                         <Box
                             display="flex"
                             m="1"
+                            ml="2"
+                            borderRadius="2xl"
+                            p="2"
                             name="aboutUs"
                             onClick={handleClickAboutUs}
+                            bg={
+                                location.pathname === "/aboutUs" &&
+                                navSize === "large"
+                                    ? "blue.100"
+                                    : "none"
+                            }
                         >
                             <IconButton
                                 bg={
@@ -136,10 +191,12 @@ export default function Header({ navSize, setNavSize }) {
                                         ? "blue.100"
                                         : "none"
                                 }
+                                mr="1"
+                                borderRadius="xl"
                                 _hover={{
                                     background:
                                         location.pathname === "/aboutUs"
-                                            ? "blue.200"
+                                            ? "blue.100"
                                             : "none",
                                 }}
                                 icon={<HiUserGroup fontSize="1.5rem" />}
@@ -158,13 +215,24 @@ export default function Header({ navSize, setNavSize }) {
                         placement="right"
                         hasArrow
                         ml="5px"
-                        bg="blue.600"
+                        py="4px"
+                        px="3"
+                        backgroundImage="linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%)"
                     >
                         <Box
                             display="flex"
                             m="1"
+                            ml="2"
+                            borderRadius="2xl"
+                            p="2"
                             name="contactUs"
                             onClick={handleClickContactUs}
+                            bg={
+                                location.pathname === "/contactUs" &&
+                                navSize === "large"
+                                    ? "blue.100"
+                                    : "none"
+                            }
                         >
                             <IconButton
                                 bg={
@@ -172,10 +240,12 @@ export default function Header({ navSize, setNavSize }) {
                                         ? "blue.100"
                                         : "none"
                                 }
+                                mr="1"
+                                borderRadius="xl"
                                 _hover={{
                                     background:
                                         location.pathname === "/contactUs"
-                                            ? "blue.200"
+                                            ? "blue.100"
                                             : "none",
                                 }}
                                 icon={<RiContactsFill fontSize="1.5rem" />}

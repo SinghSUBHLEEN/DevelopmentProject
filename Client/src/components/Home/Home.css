@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+.about-container {
+    padding: 20px;
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(234, 249, 249, 0.8) 0.1%,
+        rgba(239, 249, 251, 1.9) 90.1%
+    );
+    margin: 0 10%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.project-container {
+    padding: 20px;
+    margin: 0 10%;
+    background-image: radial-gradient(
+        circle 263px at 100.2% 3%,
+        rgba(12, 85, 141, 1) 31.1%,
+        rgba(205, 181, 93, 1) 36.4%,
+        rgba(244, 102, 90, 1) 50.9%,
+        rgba(199, 206, 187, 1) 60.7%,
+        rgba(249, 140, 69, 1) 72.5%,
+        rgba(12, 73, 116, 1) 72.6%
+    );
+    /* back */
+}
+
+.btn-grad {
+    background-image: linear-gradient(
+        to right,
+        #2c3e50 0%,
+        #3498db 51%,
+        #2c3e50 100%
+    );
+    margin: 10px;
+    padding: 14px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    color: ghostwhite;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    /* color: #fff; */
+    text-decoration: none;
+}
+
+.about-para::first-letter {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.about-para {
+    font-size: large;
+    color: "black";
+}
+
+.about-heading {
+    font-size: 3rem;
+    font-family: "Acme", sans-serif;
+}
+
+.caption {
+    font-family: "Acme", sans-serif;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+.child {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
