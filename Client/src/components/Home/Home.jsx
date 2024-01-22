@@ -2,6 +2,7 @@ import "./Home.css";
 import Carousel from "react-bootstrap/Carousel";
 import Images from "../../images/Images";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 import {
     Box,
@@ -24,6 +25,14 @@ import HomeIcon4 from "../Icons/HomeIcon4";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 function Home() {
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        navigate("/aboutUs");
+        return;
+    };
+
     return (
         <>
             <div
@@ -115,6 +124,7 @@ function Home() {
                         color="gray.200"
                         className="btn-grad"
                         width="fit-content"
+                        onClick={handleNavigate}
                         style={{ borderWidth: "0px", borderRadius: "50px" }}
                     >
                         <Flex>
