@@ -10,6 +10,7 @@ import Home from "./components/Home/Home";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Projects from "./components/Projects/Projects";
+import { Container } from "react-bootstrap";
 
 function App() {
     const [navSize, setNavSize] = useState("small");
@@ -56,27 +57,17 @@ function App() {
                         </Box>
                     </Box>
                 </Box>
-                <Box
-                    display="flex"
-                    // justifyContent="space-between"
-                    className="upper"
-                >
+                <Box display="flex">
                     <Sidebar navSize={navSize} setNavSize={setNavSize} />
-                    <div style={{ display: "block" }}>
+                    <Box style={{ display: "block" }}>
                         <Routes>
-                            <Route path="/home" Component={Home}></Route>
-                            <Route path="/" Component={Home}></Route>
-                            <Route path="/aboutUs" Component={AboutUs}></Route>
-                            <Route
-                                path="/contactUs"
-                                Component={ContactUs}
-                            ></Route>
-                            <Route
-                                path="/projects"
-                                Component={Projects}
-                            ></Route>
+                            <Route path="/home" Component={Home} />
+                            <Route path="/" Component={Home} />
+                            <Route path="/aboutUs" Component={AboutUs} />
+                            <Route path="/contactUs" Component={ContactUs} />
+                            <Route path="/projects" Component={Projects} />
                         </Routes>
-                    </div>
+                    </Box>
                 </Box>
             </div>
             <Footer />

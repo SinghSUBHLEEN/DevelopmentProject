@@ -33,7 +33,6 @@ function Home() {
                     flexDirection: "column",
                     marginLeft: "auto",
                     marginRight: "auto",
-                    // marginBottom: "600px",
                 }}
             >
                 <Carousel
@@ -45,7 +44,7 @@ function Home() {
                         boxShadow: "rgba(0, 0, 0, 0.5) 0px 4px 12px",
                     }}
                 >
-                    <Carousel.Item interval={1200}>
+                    <Carousel.Item interval={1300}>
                         <img src={Images.banner2} />
                         <Carousel.Caption>
                             <h3 className="caption">
@@ -53,7 +52,7 @@ function Home() {
                             </h3>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item interval={1200}>
+                    <Carousel.Item interval={1300}>
                         <img src={Images.banner1} />
                         <Carousel.Caption>
                             <h3 className="caption">
@@ -61,7 +60,7 @@ function Home() {
                             </h3>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item interval={1200}>
+                    <Carousel.Item interval={1300}>
                         <img src={Images.banner3} />
                         <Carousel.Caption>
                             <h3 className="caption">
@@ -71,7 +70,7 @@ function Home() {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <Flex>
+            <Flex my="140px">
                 <Flex
                     flexDir="column"
                     mt="10"
@@ -80,6 +79,7 @@ function Home() {
                     borderRadius="xl"
                     boxShadow="rgba(0, 0, 0, 0.2) 0px 4px 12px"
                     color="gray.600"
+                    py="12"
                 >
                     <div
                         style={{
@@ -129,7 +129,7 @@ function Home() {
                     </button>
                 </Flex>
             </Flex>
-            <Flex>
+            <Flex my="140px">
                 <Flex
                     flexDir="column"
                     width="100%"
@@ -137,9 +137,9 @@ function Home() {
                     mb="10"
                     borderRadius="xl"
                     color="gray.100"
-                    e
                     className="project-container"
                     boxShadow="rgba(0, 0, 0, 0.233) 0px 4px 12px"
+                    py="12"
                 >
                     <Flex
                         style={{

@@ -28,14 +28,11 @@ export default function Header({ navSize, setNavSize }) {
     return (
         <>
             <Box
-                // left="-10px"
+                display="block"
                 ml={navSize === "small" ? "-10px" : "0px"}
-                // h="107.47%"
                 minHeight="107.47%"
                 boxShadow="0 0 12px 0 rgba(0, 0, 0, 0.05)"
                 w={navSize === "small" ? "60px" : "150px"}
-                flexDir="column"
-                justifyContent="space-between"
             >
                 <Flex
                     flexDir="column"
@@ -105,6 +102,55 @@ export default function Header({ navSize, setNavSize }) {
                         </Box>
                     </Tooltip>
                     <Tooltip
+                        label={navSize === "small" ? "About us" : ""}
+                        placement="right"
+                        hasArrow
+                        ml="5px"
+                        py="4px"
+                        px="3"
+                        backgroundImage="linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%)"
+                    >
+                        <Box
+                            display="flex"
+                            m="1"
+                            ml="2"
+                            borderRadius="2xl"
+                            p="2"
+                            name="aboutUs"
+                            onClick={handleClickAboutUs}
+                            bg={
+                                location.pathname === "/aboutUs" &&
+                                navSize === "large"
+                                    ? "blue.100"
+                                    : "none"
+                            }
+                        >
+                            <IconButton
+                                bg={
+                                    location.pathname === "/aboutUs"
+                                        ? "blue.100"
+                                        : "none"
+                                }
+                                mr="1"
+                                borderRadius="xl"
+                                _hover={{
+                                    background:
+                                        location.pathname === "/aboutUs"
+                                            ? "blue.100"
+                                            : "none",
+                                }}
+                                icon={<HiUserGroup fontSize="1.5rem" />}
+                            />
+                            <Box
+                                display={navSize === "small" ? "none" : "flex"}
+                                style={{ alignSelf: "center" }}
+                                _hover={{ cursor: "pointer" }}
+                            >
+                                About us
+                            </Box>
+                        </Box>
+                    </Tooltip>
+                    <Tooltip
                         label={navSize === "small" ? "Projects" : ""}
                         // label="Projects"
                         placement="right"
@@ -158,55 +204,6 @@ export default function Header({ navSize, setNavSize }) {
                                 _hover={{ cursor: "pointer" }}
                             >
                                 Projects
-                            </Box>
-                        </Box>
-                    </Tooltip>
-                    <Tooltip
-                        label={navSize === "small" ? "About us" : ""}
-                        placement="right"
-                        hasArrow
-                        ml="5px"
-                        py="4px"
-                        px="3"
-                        backgroundImage="linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%)"
-                    >
-                        <Box
-                            display="flex"
-                            m="1"
-                            ml="2"
-                            borderRadius="2xl"
-                            p="2"
-                            name="aboutUs"
-                            onClick={handleClickAboutUs}
-                            bg={
-                                location.pathname === "/aboutUs" &&
-                                navSize === "large"
-                                    ? "blue.100"
-                                    : "none"
-                            }
-                        >
-                            <IconButton
-                                bg={
-                                    location.pathname === "/aboutUs"
-                                        ? "blue.100"
-                                        : "none"
-                                }
-                                mr="1"
-                                borderRadius="xl"
-                                _hover={{
-                                    background:
-                                        location.pathname === "/aboutUs"
-                                            ? "blue.100"
-                                            : "none",
-                                }}
-                                icon={<HiUserGroup fontSize="1.5rem" />}
-                            />
-                            <Box
-                                display={navSize === "small" ? "none" : "flex"}
-                                style={{ alignSelf: "center" }}
-                                _hover={{ cursor: "pointer" }}
-                            >
-                                About us
                             </Box>
                         </Box>
                     </Tooltip>
