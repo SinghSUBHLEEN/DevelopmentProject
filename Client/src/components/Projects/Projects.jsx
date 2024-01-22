@@ -1,7 +1,12 @@
+import { Box } from "@chakra-ui/react";
 import "./Projects.css";
 
 function Projects() {
-    return <></>;
+    return (
+        <>
+            <Box minHeight="92vh"></Box>
+        </>
+    );
 }
 
 export default Projects;

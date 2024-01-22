@@ -82,7 +82,7 @@ function Home() {
             <Flex my="140px">
                 <Flex
                     flexDir="column"
-                    mt="10"
+                    mt="1"
                     mb="10"
                     className="about-container"
                     borderRadius="xl"

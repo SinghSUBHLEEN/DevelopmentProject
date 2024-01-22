@@ -24,7 +24,7 @@ function AboutUs() {
                                 ml="auto"
                                 mr="auto"
                                 borderRadius="2xl"
-                                boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px"
+                                boxShadow="rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px"
                             />
                         </Col>
                         <Col sm>
@@ -102,7 +102,7 @@ function AboutUs() {
                                 ml="auto"
                                 mr="auto"
                                 borderRadius="2xl"
-                                boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px"
+                                boxShadow="rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px"
                             />
                         </Col>
                     </Row>
