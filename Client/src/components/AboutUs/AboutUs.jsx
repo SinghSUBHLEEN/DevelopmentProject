@@ -34,7 +34,7 @@ function AboutUs() {
                                     justifyContent: "left",
                                 }}
                             >
-                                <span className="fancy">About Our Company</span>
+                                <span className="fancy">About Us</span>
                             </div>
                             <p className="about-para">
                                 Onkar Developers epitomizes “passion at work” in

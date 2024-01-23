@@ -2,33 +2,12 @@
 
 .about-container {
     padding: 20px;
-    /* background-image: radial-gradient(
-        circle farthest-corner at 10% 20%,
-        rgba(234, 249, 249, 0.8) 0.1%,
-        rgba(239, 249, 251, 1.9) 90.1%
-    ); */
-    background-image: linear-gradient(
-        180.3deg,
-        rgba(205, 224, 255, 0.7) 37.2%,
-        rgba(0, 81, 168, 0.5) 137.3%
-    );
-    margin: 0 10%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 0 4%;
 }
 
 .project-container {
     padding: 20px;
-    margin: 0 10%;
-    background-image: radial-gradient(
-        circle 263px at 100.2% 3%,
-        rgba(12, 85, 141, 1) 31.1%,
-        rgba(205, 181, 93, 1) 36.4%,
-        rgba(244, 102, 90, 1) 50.9%,
-        rgba(199, 206, 187, 1) 60.7%,
-        rgba(249, 140, 69, 1) 72.5%,
-        rgba(12, 73, 116, 1) 72.6%
-    );
-    /* back */
+    margin: 0 4%;
 }
 
 .btn-grad {
@@ -100,10 +79,20 @@
     transform-origin: bottom;
 }
 
-.home-parent {
+.home-parent1 {
     background-color: #bee3f8;
     background-image: linear-gradient(
-        43deg,
+        45deg,
+        #bee3f8 0%,
+        #ffffff 46%,
+        #bee3f8 100%
+    );
+}
+
+.home-parent2 {
+    background-color: #bee3f8;
+    background-image: linear-gradient(
+        135deg,
         #bee3f8 0%,
         #ffffff 46%,
         #bee3f8 100%
