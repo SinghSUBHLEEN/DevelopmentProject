@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const http = require("http");
+const https = require("https");
 
 app.use(express.static(__dirname + "/Client/dist"));
 
@@ -14,7 +14,7 @@ const handler = async (event, context) => {
     const url = "https://onkardevelopers.onrender.com";
 
     return new Promise((resolve, reject) => {
-        const req = http.get(url, (res) => {
+        const req = https.get(url, (res) => {
             if (res.statusCode === 200) {
                 console.log("done");
                 resolve({
