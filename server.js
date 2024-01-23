@@ -10,28 +10,28 @@ app.all("*", (req, res) => {
 
 app.listen(5000, console.log("Listening at 5000"));
 
-const handler = async (event, context) => {
-    const url = "https://onkardevelopers.onrender.com";
+// const handler = async (event, context) => {
+//     const url = "https://onkardevelopers.onrender.com";
 
-    return new Promise((resolve, reject) => {
-        const req = https.get(url, (res) => {
-            if (res.statusCode === 200) {
-                console.log("done");
-                resolve({
-                    statusCode: 200,
-                    body: "Server pinged successfully",
-                });
-            } else {
-                reject(new Error(`error`));
-            }
-        });
+//     return new Promise((resolve, reject) => {
+//         const req = https.get(url, (res) => {
+//             if (res.statusCode === 200) {
+//                 console.log("done");
+//                 resolve({
+//                     statusCode: 200,
+//                     body: "Server pinged successfully",
+//                 });
+//             } else {
+//                 reject(new Error(`error`));
+//             }
+//         });
 
-        req.on("error", (error) => {
-            reject(error);
-        });
+//         req.on("error", (error) => {
+//             reject(error);
+//         });
 
-        req.end();
-    });
-};
+//         req.end();
+//     });
+// };
 
-setInterval(handler, 810000);
+// setInterval(handler, 810000);

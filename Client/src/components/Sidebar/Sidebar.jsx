@@ -30,7 +30,7 @@ export default function Header({ navSize, setNavSize }) {
             <Box
                 display="block"
                 ml={navSize === "small" ? "-10px" : "0px"}
-                minHeight="107.47%"
+                height="100vh"
                 boxShadow="0 0 12px 0 rgba(0, 0, 0, 0.05)"
                 w={navSize === "small" ? "60px" : "150px"}
             >

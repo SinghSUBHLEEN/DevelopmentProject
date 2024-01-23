@@ -2,10 +2,15 @@
 
 .about-container {
     padding: 20px;
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
         circle farthest-corner at 10% 20%,
         rgba(234, 249, 249, 0.8) 0.1%,
         rgba(239, 249, 251, 1.9) 90.1%
+    ); */
+    background-image: linear-gradient(
+        180.3deg,
+        rgba(205, 224, 255, 0.7) 37.2%,
+        rgba(0, 81, 168, 0.5) 137.3%
     );
     margin: 0 10%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -93,4 +98,14 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
+}
+
+.home-parent {
+    background-color: #bee3f8;
+    background-image: linear-gradient(
+        43deg,
+        #bee3f8 0%,
+        #ffffff 46%,
+        #bee3f8 100%
+    );
 }

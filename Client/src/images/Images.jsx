@@ -13,6 +13,7 @@ const IMAGES = {
     p4: new URL("./p4.jpg", import.meta.url).href,
     p6: new URL("./p6.jpg", import.meta.url).href,
     plane: new URL("./plane.png", import.meta.url).href,
+    c: new URL("./c.jpg", import.meta.url).href,
 };
 
 export default IMAGES;

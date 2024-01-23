@@ -57,9 +57,9 @@ function App() {
                         </Box>
                     </Box>
                 </Box>
-                <Box display="flex">
+                <Box display="flex" width="100%">
                     <Sidebar navSize={navSize} setNavSize={setNavSize} />
-                    <Box style={{ display: "block" }}>
+                    <Box style={{ display: "block", width: "100%" }}>
                         <Routes>
                             <Route path="/home" Component={Home} />
                             <Route path="/" Component={Home} />
