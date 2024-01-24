@@ -4,8 +4,12 @@ const https = require("https");
 
 app.use(express.static(__dirname + "/Client/dist"));
 
-app.all("*", (req, res) => {
+app.all("*", async (req, res) => {
     res.status(201).sendFile(__dirname + "/Client/dist/index.html");
+});
+
+app.post("/api/message", async (req, res) => {
+    res.status(201).send("done");
 });
 
 app.listen(5000, console.log("Listening at 5000"));
