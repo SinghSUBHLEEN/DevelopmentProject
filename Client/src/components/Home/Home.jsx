@@ -33,6 +33,12 @@ function Home() {
         return;
     };
 
+    const handleProjectClick = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        navigate("/projects");
+        return;
+    };
+
     return (
         <>
             <div
@@ -196,6 +202,7 @@ function Home() {
                                     borderColor: "#338ac6",
                                 }}
                                 className="child bounce"
+                                onClick={handleProjectClick}
                             >
                                 <Flex justifyContent="center">
                                     <span
@@ -237,6 +244,7 @@ function Home() {
                                 }}
                                 width="fit-content"
                                 className="child bounce"
+                                onClick={handleProjectClick}
                             >
                                 <Flex justifyContent="center">
                                     <span

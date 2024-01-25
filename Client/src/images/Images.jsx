@@ -14,6 +14,17 @@ const IMAGES = {
     p6: new URL("./p6.jpg", import.meta.url).href,
     plane: new URL("./plane.png", import.meta.url).href,
     c: new URL("./c.jpg", import.meta.url).href,
+    ekam: new URL("./ekam.jpeg", import.meta.url).href,
+    onkar: new URL("./onkar.jpeg", import.meta.url).href,
+    era: new URL("./ekam/era.jpg", import.meta.url).href,
+    erb: new URL("./ekam/erb.jpg", import.meta.url).href,
+    erc: new URL("./ekam/erc.jpg", import.meta.url).href,
+    erd: new URL("./ekam/erd.jpg", import.meta.url).href,
+    ere: new URL("./ekam/ere.jpg", import.meta.url).href,
+    ora: new URL("./onkar/ora.jpg", import.meta.url).href,
+    orb: new URL("./onkar/orb.jpg", import.meta.url).href,
+    orc: new URL("./onkar/orc.jpg", import.meta.url).href,
+    ord: new URL("./onkar/ord.jpg", import.meta.url).href,
 };
 
 export default IMAGES;

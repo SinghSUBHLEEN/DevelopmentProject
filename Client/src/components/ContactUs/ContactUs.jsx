@@ -193,10 +193,7 @@ function ContactUs() {
                                         {"+91 9434360593"}
                                     </div>
                                     <div style={{ marginLeft: "1rem" }}>
-                                        {"+91 7001406563"}
-                                    </div>
-                                    <div style={{ marginLeft: "1rem" }}>
-                                        {"+91 8335050022"}
+                                        {"+91 7699991516"}
                                     </div>
                                 </span>
                             </Flex>
@@ -259,10 +256,7 @@ function ContactUs() {
                                     }}
                                 >
                                     <div style={{ marginLeft: "1rem" }}>
-                                        abc1@xyz.com
-                                    </div>
-                                    <div style={{ marginLeft: "1rem" }}>
-                                        abc2@xyz.com
+                                        onkardevelopers@outlook.com
                                     </div>
                                 </span>
                             </Flex>
@@ -292,7 +286,7 @@ function ContactUs() {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Box width="80%" borderRadius="3xl" pt="7" px="10" pb="16">
+                <Box width="80%" borderRadius="3xl" pt="7" px="12" pb="16">
                     <Flex
                         className="fancy"
                         justifyContent="center"
@@ -301,7 +295,7 @@ function ContactUs() {
                         Get in touch
                     </Flex>
                     <form
-                        action="https://formspree.io/f/mgegoykb"
+                        action="https://formspree.io/f/mdoqalgy"
                         method="post"
                     >
                         <FormControl isRequired>
