@@ -375,7 +375,7 @@ function Projects() {
                                             color: "rgb(74,85,104)",
                                         }}
                                     >
-                                        Ameneties
+                                        Amenities
                                     </div>
                                     <div
                                         className="about-heading"
@@ -861,7 +861,7 @@ function Projects() {
                                             color: "rgb(74,85,104)",
                                         }}
                                     >
-                                        Ameneties
+                                        Amenities
                                     </div>
                                     <div
                                         className="about-heading"
